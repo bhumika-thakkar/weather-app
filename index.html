@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="jscript.js" defer></script>
+</head>
+<body>
+
+    <div class="weather-app">
+
+        <header>
+            <h1>&#127780; Weather App</h1>
+            <p>Discover the weather in your city</p>
+        </header>
+
+        <main>
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter city name..."
+                    aria-label="City name"
+                    required
+                >
+
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="message" role="status"></p>
+
+            <section id="weather-result" aria-live="polite">
+                <h2 id="city-name">Search for a city</h2>
+                <p id="weather-icon">&#127758;</p>
+                <p id="temperature">--&deg;C</p>
+                <p id="weather-description">
+                    Your weather will appear here.
+                </p>
+
+                <div class="weather-details">
+                    <div>
+                        <span>&#128167; Humidity</span>
+                        <p id="humidity">--%</p>
+                    </div>
+
+                    <div>
+                        <span>&#128168; Wind Speed</span>
+                        <p id="wind-speed">-- km/h</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Weather data powered by Open-Meteo</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
